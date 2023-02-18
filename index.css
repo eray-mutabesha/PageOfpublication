@@ -1,0 +1,406 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    font-size: 16px;
+    width: 100%;
+    background:white;
+}
+header{
+    color: white;
+    display: flex;
+    justify-content:space-around;
+    background-color: rgb(2, 2, 46);
+    border-bottom: 3px solid white;
+    height: 60px;
+    width:100%;
+}
+header span img{
+  width: 50px;
+}
+header span{
+  display: none; 
+}
+
+header h3{
+    margin: 20px; 
+}
+header .seconnecter{
+    border-radius: 20px;
+    height: 30px;
+    text-align: center;
+    color: black;
+    margin: 15px;
+    background: white;
+}
+header .seconnecter:hover{
+  background: #e3f3ff;
+  transition: 1s;
+}
+header p{
+    margin: 5px;
+    margin-top: 5px;
+}
+header nav{
+  position: absolute;
+  left: -100%;
+  transition: 1.5s;
+  top: 60px;
+  color: black;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px black;
+}
+header nav{
+  height: fit-content;
+  display: grid;
+
+  background:white;
+}
+/* ****************************************** */
+section{
+    display: flex;
+}
+section aside{
+    width: 100%;
+    background: #e3f3ff;
+}
+section nav{
+    height: fit-content;
+    display: grid;
+    width: 350px;
+    background:white;
+}
+section nav div,header nav div {
+  margin: 5px;
+}
+.Dashboard{
+    margin-top: 30px;
+}
+section nav div p,section nav div h1{
+    margin: 10px;
+}
+section nav .Publication,header nav .Publication{
+    margin-left: 0;
+    margin-right: 0;
+    height: 40px;
+    background-color:#e3f3ff;
+}
+section nav div:hover,header nav div:hover{
+    background-color:#e3f3ff;
+}
+section nav div p,section nav div h1{
+    margin-left: 10%;
+}
+/* *********************block two******************************* */
+aside .publication{
+    margin: 40px;
+    border-bottom: 2px solid rgb(44, 146, 241);
+}
+table{
+    background-color: white;
+    margin-top: -40px;
+    width: 100%;
+    border-collapse: collapse; 
+    border: 1px solid black;
+}
+table thead tr{
+    text-align: left;
+    border: 1px solid black;
+}
+table tbody tr{
+    border: 1px solid black;
+    padding: 5px;
+}
+aside .bouton{
+    background: rgb(2, 2, 46);
+    border-radius: 20px;
+    color: white;
+    width: fit-content;
+    height: 40px;
+    line-height: 0;
+   float: right;
+   
+}
+aside .btn-width{
+   width: 100%;
+}
+aside .bouton p{
+    margin: 20px; 
+}
+@keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  .circle-svg {
+    margin: auto;
+    display: block;
+    max-height: 80px;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+  }
+  .circle-svg text {
+    text-align:center;
+    color:black;
+    font-size:10px;
+  }
+  .circle-svg path.percent {
+    stroke: #21b1f9ba;
+     fill: white; 
+     stroke-width: 2.8; 
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  .circle-svg path.around {
+      stroke: #c4c4c4;
+      fill: none;
+      stroke-width: 2.8; 
+  }
+  aside .display-grig{
+    display: grid;
+    width:60%;
+    /* border: 1px solid red;  */
+    gap: 100px; 
+
+    margin: 40px;
+    margin-top: 0px;
+  }
+  .display-grig .cercle .reussite{
+    text-align: center;
+  }
+  aside .display-grig .cercle{
+    display: flex;
+    justify-content: space-between;
+  }
+  aside .display-flex{
+    /* border: 1px solid red;  */
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  aside .evalution{
+    /* border: 1px solid red; */
+    margin-right: 5%;
+    width: 20%;
+     display: grid; 
+     gap: 20px;
+     height: fit-content;
+  }
+  .Evaluation-finenciere{
+    background: gainsboro;
+    text-align: center;
+    height: fit-content;
+    border-radius: 8px;
+  }
+  .Evaluation-finenciere p{
+    padding: 10px;
+  
+  }
+  .eleve-en-ordre-div{
+    box-shadow: 0px 0px 5px 0px black;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .eleve-en-ordre-div .total{
+    padding: 10px;
+  }
+  .eleve-en-ordre-div .blue{
+    background: blue;
+    color: white;
+    height: 20px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  .eleve-en-ordre-div .blue p,.eleve-en-ordre-div2 .blue,.eleve-en-ordre-div3 .blue{
+    padding-left: 5%;
+  }
+  .eleve-en-ordre-div2{
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px black;
+  }
+  .eleve-en-ordre-div2 .blue{
+    background:red;
+    color: white;
+    height: 20px;
+  }
+  .eleve-en-ordre-div2 .total{
+    padding: 10px;
+  }
+  .eleve-en-ordre-div3 .blue{
+    background:green;
+    color: white;
+    height: 20px;
+  }
+  .eleve-en-ordre-div3{
+    box-shadow: 0px 0px 5px 0px black;
+    border-radius: 5px;
+  }
+  .eleve-en-ordre-div3 .total{
+    padding: 10px;
+  }
+  /* ******************************** */
+  .evalution .deroulant{
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    width: 90%;
+    float: right;
+    background-color: #6f6fff72;
+    height: 8px;
+  
+  }
+  .evalution .deroulant span{
+    background-color:blue;
+    float: left;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    animation: htmlslid 1.5s cubic-bezier(0.33,1,0.68,1)forwards;
+  }
+  .evalution .deroulant2{
+    width: 100%;
+    float: right;
+    background-color: #ff6fb56c;
+    height: 8px;
+  
+  }
+  .evalution .deroulant2 span{
+    background-color:rgb(255, 0, 76);
+    float: left;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    animation: htmlslid 1.5s cubic-bezier(0.33,1,0.68,1)forwards;
+  }
+  .evalution .deroulant3{
+    width: 100%;
+    float: right;
+    background-color:rgba(0, 128, 0, 0.322);
+    height: 8px;
+  
+  }
+  .evalution .deroulant3 span{
+    background-color:green;
+    float: left;
+    width: 100%;
+    height: 8px;
+    animation: htmlslid 1.5s cubic-bezier(0.33,1,0.68,1)forwards;
+  }
+  @keyframes  htmlslid {
+   0%{
+    width: 0%;
+   }
+   100%{
+    width: 80%;
+   }
+  }
+  /* ******************************media queries************************************* */
+  @media (max-width:805px){
+    section nav{
+     display: none;
+  }
+  header .mobile-menu{
+    position: absolute;
+    left:0;
+    transition: 1.5s;
+    top: 60px;
+    color: black;
+    background-color: white;
+  }
+  header span{
+    display: inline;
+  }
+  }
+  @media (max-width:600px){
+    aside .display-flex{
+      display: grid;
+    }
+    aside .evalution{
+      margin-right:auto;
+      margin-left: auto;
+      width: 100%;
+      margin: 0px;
+      padding: 20px;
+       display: grid; 
+       grid-template-columns: auto auto ;
+    }
+    aside .display-grig{
+      display: grid;
+      width:100%;
+      gap: 50px; 
+      margin: 0px;
+      padding: 20px;
+      margin-top: 0px;
+    }
+    aside .publication{
+      margin: 20px;
+  }
+    }
+    @media (max-width:445px){
+      aside .display-grig .cercle{
+        display: grid;
+        grid-template-columns: auto auto;
+
+      }
+      aside .evalution{
+      
+         display: grid; 
+         grid-template-columns:  auto ;
+      }
+      aside .bouton{
+        background: rgb(2, 2, 46);
+        border-radius: 20px;
+        color: white;
+        width: fit-content;
+        height: 40px;
+        line-height: 2.5;
+       float: none;
+       margin: auto;
+       
+    }
+    aside .btn-width{
+       width: 100%;
+    }
+    aside .bouton p{
+        margin: 20px; 
+    }
+    table{
+      font-size: small;
+      width: 100%;
+    }
+    aside .display-grig{
+      display: grid;
+      width:100%;
+      margin: 0px;
+      margin-top: 0px;
+    }
+    }
+    @media (max-width:425px){
+      header .seconnecter{
+        border-radius: 20px;
+        height: 30px;
+        text-align: center;
+        color: black;
+        margin: 15px;
+        background: white;
+      
+    }
+    header p{
+      margin: 0px;
+      padding: 10px;
+      margin-top: -5px;
+      font-size: small;
+  }
+  header h3{
+    font-size: 16px;
+  }
+  header img{
+    width: 20px;
+    height: 30px;
+    margin-top: 10px;
+  }
+    }
